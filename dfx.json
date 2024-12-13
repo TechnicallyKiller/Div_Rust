@@ -1,0 +1,25 @@
+{
+  
+  "canisters": {
+    "icp_rust_backend_backend": {
+      "candid": "src/icp_rust_backend_backend/icp_rust_backend_backend.did",
+      "package": "icp_rust_backend_backend",
+      "type": "rust"
+    },
+    "backend": {
+      "type": "custom",
+      "wasm": "target/wasm32-unknown-unknown/release/icp_rust_backend_backend.wasm",
+      "candid": "src/icp_rust_backend_backend/icp_rust_backend_backend.did"
+    }
+    
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+
+  "output_env_file": ".env",
+  "version": 1
+}
